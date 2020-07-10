@@ -6,9 +6,9 @@
 
 ### Preview :
 
-<img src="ToDoS.png">
+<img src="ToDoS.PNG" width='450' height='500'>
 
-> Get the demo here : [JS ToDoS]()
+> Get the demo here : [JS ToDoS](https://pm0824.github.io/Javascript-TODO-App/)
 
 
 
