@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ToDoS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todoapp">
+        <header>
+            <h1>ToDoS <i class="fa fa-list" ></i></h1>
+            <h3>Plan Your Day Now!</h3>
+        </header>
+       
+        <section class="input-section">
+            <button class="toggleall" onclick="handlers.toggleAll()"></button>
+            <form onsubmit="handlers.submitTodo()" class="todoForm">
+                <input type="text"  name="todo" id="todoInput"  placeholder="What Needs To Be Done...?">
+            </form>
+        </section>       
+       
+        <ul class="todolist">
+        </ul>
+    </div>
+    <footer>
+        <p> © Copyright 2020 <a href="https://github.com/pm0824">Prachi</a>. All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
