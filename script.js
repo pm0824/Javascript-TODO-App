@@ -132,27 +132,30 @@ var view = {
         
         //Get the clicked element
         var clickedElement = event.target;
-        console.log(event.target);
+       
         //If it is delete btn
-        if(clickedElement.className==='delbtn' || clickedElement.className==='fa fa-trash'){
+        if(clickedElement.className==='delbtn' ){
             handlers.deleteTodo(parseInt(clickedElement.parentNode.id));
+        }
+        if(clickedElement.className==='fa fa-trash'){
+           //li is second parent of icon
+            handlers.deleteTodo(parseInt(clickedElement.parentNode.parentNode.id));
         }
 
         if(clickedElement.className==='todo-text'){
-            console.log(clickedElement);
+          
             clickedElement.contentEditable = true;
             clickedElement.className+=' todo-text-editing';
         }
 
         if(clickedElement.className==='editbtn'){
-            console.log(clickedElement);
-            console.log(clickedElement.parentNode.id);
+            
             handlers.changeTodo(parseInt(clickedElement.parentNode.id),
                                 document.getElementsByClassName('todo-text')[clickedElement.parentNode.id].textContent);
         }
         
         if(clickedElement.className==='todo-check'){
-            console.log(clickedElement);
+           
             handlers.toggleCompleted(parseInt(clickedElement.parentNode.id));
         }
        
